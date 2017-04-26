@@ -4,3 +4,16 @@ Test 1
 3. What is value a and b for  (b= a++ + a++) if a=5?
 4. Is statement    char r=100; correct?
 5. What are datatypes? 
+
+
+Important Programs:
+Reverse an array
+Find the frequency of a digit in a number 
+Find the frequency of a character in a String
+Find that a word exist in the string
+Find that a character exist in a string
+Palindrome of a number 
+Palindrome of a String 
+Armstrong of a number 
+Reverse a number
+sum of digits of a number until the addition is not obtain a s single digit. 
