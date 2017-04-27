@@ -1,20 +1,44 @@
 Test 1
-1. Why Java is called platform independent? 
-2. What is the output of 5&7?
-3. What is value a and b for  (b= a++ + a++) if a=5?
-4. Is statement    char r=100; correct?
-5. What are datatypes? 
+                      1. Why Java is called platform independent? 
+                      2. What is the output of 5&7?
+                      3. What is value a and b for  (b= a++ + a++) if a=5?
+                      4. Is statement    char r=100; correct?
+                      5. What are datatypes? 
 
+                      Part-2
+                      7. Difference between QA and QC.
+                      8. What is SQA? 
+                      9. What is testing?
+                      10. What are good qualities of tester?
+                      11. What is cost of quality? 
+                      12. Why according to you testing is important? 
 
 Important Programs:
-Reverse an array
-Find the frequency of a digit in a number 
-Find the frequency of a character in a String
-Find that a word exist in the string
-Find that a character exist in a string
-Palindrome of a number 
-Palindrome of a String 
-Armstrong of a number 
-Reverse a number
-sum of digits of a number until the addition is not obtain a s single digit. 
-Find that the list of missing and present character in String "My name is Java". 
+    Reverse an array
+    Find the frequency of a digit in a number 
+    Find the frequency of a character in a String
+    Find that a word exist in the string
+    Find that a character exist in a string
+    Palindrome of a number 
+    Palindrome of a String 
+    Armstrong of a number 
+    Reverse a number
+    sum of digits of a number until the addition is not obtain a s single digit. 
+    Find that the list of missing and present character in String "My name is Java". 
+
+
+Test 2 
+    1. How many bytes are consumed by datatype char?
+    2. What type of Data type is String?
+    3. WAP to print “Hello Java” as “Avaj Olleh”?
+    4. Why string is immutable?
+    5. What is difference between String, String builder and String buffer? 
+    6. Where difference between is equals and == in case of String?
+    
+    Part-2 
+    7. What are different meeting in Scrum Process? 
+    8. What are advantages and disadvantages of Agile? 
+    9. What do you understand by Test driven framework?
+    10. What is burn up and burn down chart?
+    11. Who is Product Owner?
+    12. What is Sprint backlog?
