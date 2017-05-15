@@ -14,18 +14,43 @@ Test 1
                       12. Why according to you testing is important? 
 
 Important Programs:
-    Reverse an array
-    Find the frequency of a digit in a number 
-    Find the frequency of a character in a String
-    Find that a word exist in the string
-    Find that a character exist in a string
-    Palindrome of a number 
-    Palindrome of a String 
-    Armstrong of a number 
-    Reverse a number
-    sum of digits of a number until the addition is not obtain a s single digit. 
-    Find that the list of missing and present character in String "My name is Java". 
-
+  Anusha 1.   Reverse an array
+         2. Palindrome of a String 
+   Ishaan 1.  Find the frequency of a digit in a number 
+           2.   Print a pattern  5 5 5 5 5
+                                  4 4 4 4
+                                   3 3 3
+                                    2 2 
+                                     1
+  Ravdeep 1.   Find the frequency of a character in a String
+           2.    WAP to print "Happy birthday" as "HaPpY BiRtHdAy"
+   Sheena 1.  Find that a word exist in the string
+           2. WAP to print sum of diagonal elements of a square matrix
+    Vihali 1.Find that a character exist in a string
+            2. Serach an element in a array exist or not
+  Inderpal   1. Palindrome of a number 
+             2. Print * * * * *
+                       * * * *
+                        * * *
+                         * *
+                          *
+  Sunil 1.   Armstrong of a number 
+          2. Print fibonacci series
+   Sonia 1.  Reverse a number
+         2. Print series of first 10 prime numbers
+   Harjeet Singh 1.  sum of digits of a number until the addition is not obtain a s single digit. 
+                 2.    Find that the list of missing and present character in String "My name is Java". 
+    Shilpa  1. Print first n number of first odd numbers.
+            2. Wap reverse a number
+    Jashan  1. Print factorial of a number.
+            2. Print the pattern 
+               11111
+               2222
+               333
+               44
+               5
+    Janky  1. Print series of first 10 prime numbers.
+           2. WAP to print “Hello Java” as “Avaj Olleh”
 
 Test 2 
     1. How many bytes are consumed by datatype char?
