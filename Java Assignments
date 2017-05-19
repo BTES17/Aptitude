@@ -1,0 +1,105 @@
+Assignment-1 (Type Casting)
+Convert int to float
+Convert float to int 
+Convert int to char
+Convert char to int
+Convert char to float 
+Convert float to char
+
+Assignment-2 (Operators)
+
+WAP to find a number is even or odd using ternaery operator.
+WAP to find greatest between two numbers using Using Conditional Operators
+WAP to find greatest among three numbers using Using Conditional Operators
+WAP to swap two numbers using temp variables.
+WAP to swap two numbers without using temp variables.
+Try various operators that discussed today in the class.
+Write a program using conditional operator that if the number is even or nor
+Try post and pre increament and decreament operators as discuussed in class. 
+
+Assignment-3 (Conditional Statements)
+WAP to demonstrate working of if else statement
+WAP to find greatest among three numbers using 
+          1) if else statement
+1. WAP to find greatest among three numbers using if and esle if statement. 
+2. Write a program to create Simple Calculator using switch case.
+3. WAP to immplement swtich statement on days of week.
+4. Write a program to input electricity unit charges and calculate total electricity bill according to the given condition:
+                    For first 50 units Rs. 0.50/unit
+                    For next 100 units Rs. 0.75/unit
+                    For next 100 units Rs. 1.20/unit
+                    For unit above 250 Rs. 1.50/unit
+                    An additional surcharge of 20% is added to the bill 
+                    
+                    
+Assignment-4 (Loops)
+1. WAP to enter the value in integer N through keyborad and print the series of the square of natural number upto N number of elements. like if you have enter 5 then square of first five natural number should be printed as 1 4 9 16 25.
+2. WAP to print of the sum of all the squares obtain in above program.
+3. Write a program to find factorial of number say number is 5 then factorial will be 1*2*3*4*5=120
+4. Write a program to print fibonacci series that is 0 1 1 2 3 5 8 13 21..... its like the sum of last two number will be the next number in the series. 
+5. WAP to print Odd series upto N. 
+
+Assignment-5 (Loops)
+1. WAP to reverse a number 
+2. WAP to find that a number is Armstrong or not like sum of cube of digits is equal to the number itself 
+          EXAMPLE: 153 
+          1+5*5*5+3*3*3=153
+3. WAP to find that a number is Palindrome or not 
+                    Example : Reversing a number will give the original number like 1221 
+4. WAP to the sum of digits of a number 
+5. WAP to find the frequency of each digit in a number. 
+6. WAP to print the series of first N prime numbers. 
+
+
+Assignment-6(Array)
+1. WAP to declare array and add elements in the array through user input.
+2. WAP to search an element in the array.
+3. WAP to find largest elemnt in the array.
+4. WAP to sort the elements of array in ascending order.
+
+Assignment-7
+1. WAP to print enter values in 2 D array and print the array as matrix
+2. WAP to find an element in the 2 D array
+3. WAP to find the sum of all elements in 2D array
+4. WAP to print the summ of elements row wise. 
+5. WAP to print the sum of elements coulmn wise.
+6. WAP to print sum of diagonal elements of the square array. 
+
+Assignment-8
+1. WAP to reverse a String without using the Reverse method.
+2. WAP to print "Hello Java" as " Avaj OlleH"
+3. WAP to print "Hello Java" as "Java Hello". 
+2. Wap to find that a word exist in the String or not. 
+5. WAP to print the char in the string uppercase and lowercase alternatively. 
+6. Kindly upload the files in the folder as we will discuss tomorrow.
+7. Practicse revrese(), toupercase(), tolowercase(), trim(), contains(), equals(), ==, length(),
+   subString, chartoArray() and valueof() methods . 
+   
+ Assignment-9
+   1. WAP to store details of the five student as Name, Rollno, marks, collegename. 
+        -Create a method to add the student detail.
+        -Create a method that disply thr record of the each student.
+        - Calulateand print the percentagee of the student.
+        - Practicse this using static, local and instance variables.
+        
+Assignment-10
+  1. Write the above scenario with this keyword and encapsulation concept.
+  
+  13/4/17
+  1. Revise Introduction to Java its featurs for the Mock Session tomorrow. 
+  2. Experiments on package and import keyword.
+  3. Experiment the access specifier discussed today and implement the aggregation concept. 
+  4. Solve the pending task in the previous assgnements. 
+  5. Solve the Ages questions present in the Aptitude Repository. 
+  
+ Assignment-11
+  Write the code to observe the working of comand line arguments in main method?
+  Write a code for try catch simulation. Experiment that code continue to execute even if exception occurs.
+  Write a code for multiple catch blocks
+  Write a code for nested try and catch block 
+  What are Errors
+  What are checked and unchecked exceptions
+  Which class is the parent of the Exception and Error class. 
+  Which exception can be handled at compile time 
+  Which exceptions are handled at the run time
+Which Exceptions cant be handled. 
