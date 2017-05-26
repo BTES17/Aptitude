@@ -5,33 +5,9 @@
 4) now next step to install node
 5) open another comand promp and run this so that your machine act as node 
 
-"java -jar selenium-server-standalone-2.47.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5556
-
-java -jar selenium-server-standalone-2.47.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5556 -browser browserName=chrome, maxInstances=2
-
-java -jar selenium-server-standalone-2.47.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5558 -browser browserName=firefox
-
-java -jar selenium-server-standalone-2.47.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5558 -browser browserName=iexplore
-
-java -jar selenium-server-standalone-2.47.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5556 -browser browserName=iexplore -browser browserName=firefox -browser browserName=chrome
-
-java -jar selenium-server-standalone-2.47.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5556 -browser browserName=iexplore,maxInstances=1 -browser browserName=firefox,maxInstances=2 -browser browserName=chrome,maxInstances=3
-
-java -jar selenium-server-standalone-2.47.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5556 -browser browserName=iexplore,maxInstances=1 -browser browserName=firefox,maxInstances=2 -browser browserName=chrome,maxInstances=3 -maxSession=1
-
-
-java -jar selenium-server-standalone-2.47.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5557 -browser browserName=iexplore,maxInstances=1 -browser browserName=firefox,maxInstances=2 -browser browserName=chrome,maxInstances=3 -maxSession=1
-
-
 java -Dwebdriver.chrome.driver=C:\Chrome\chromedriver.exe -Dwebdriver.ie.driver=C:\Chrome\IEDriverServer.exe -jar selenium-server-standalone-3.0.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5557 -browser browserName=iexplore,maxInstances=1 -browser browserName=firefox,maxInstances=1 -browser browserName=chrome,maxInstances=1 -maxSession=1
 
-java -Dwebdriver.chrome.driver=C:\Chrome\chromedriver.exe -jar selenium-server-standalone-3.0.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5557 -browser browserName=chrome,maxInstances=1 -maxSession=1
-
-
-
-
-
-
+java -Dwebdriver.chrome.driver=C:\Chrome\chromedriver.exe -jar selenium-server-standalone-3.0.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5557 -browser browserName=chrome,maxInstances=1 -maxSession=
 
 IE 
 SELENIUMPROTOCOL:WEBDRIVER
@@ -39,14 +15,11 @@ PLATEFORM: WINDOWS
 BROWSERNAME: INTERNET EXPLORER
 MAXINTANCE:1
 
-
-
 FIFREFOX
 SELENIUMPROTOCOL:WEBDRIVER
 PLATEFORM: WINDOWS
 BROWSERNAME: FIFREFOX
 MAXINTANCE:5
-
 
 CHROME
 SELENIUMPROTOCOL:WEBDRIVER
@@ -54,27 +27,24 @@ PLATEFORM: WINDOWS
 BROWSERNAME: CHROME
 MAXINTANCE:5
 
-
-
-
 java -jar selenium-server-standalone-2.29.0.jar -host localhost -port 5555 -role webdriver -hub _http://localhost:4444/grid/register -browser browserName=firefox,maxInstances=5,platform=WINDOWS -browser browserName=chrome,maxInstances=5,platform=WINDOWS  -Dwebdriver.chrome.driver=c:\SeleniumGrid\chromedriver.exe -browser browserName=iehta,maxInstances=5,platform=WINDOWS -Dwebdriver.ie.driver=c:\SeleniumGrid\IEDriverServer.exe -browser browserName=safari,maxInstances=5,platform=WINDOWS -Dwebdriver.safari.driver=c:\Python27\SafariDriver2.28.0.safariextz    
 platform=WINDOWS -browser browserName=chrome,maxInstances=5
 
-
-
-
-
-
-
 java -jar selenium-server-standalone-2.47.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5556 -browser browserName=chrome,maxInstances=1,platform=WINDOWS  -Dwebdriver.chrome.driver=C:\HybrideFramwork\Browser_Driver\chromedriver.exe
-
-
-
 
 java -jar selenium-server-standalone-2.47.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5558 -browser browserName=iexplore,maxInstances=1,platform=WINDOWS -Dwebdriver.ie.driver=C:\HybrideFramwork\Browser_Driver\IEDriverServer.exe
 
-
-
 ###################### For RemoteMachine node########################################
 
-"java -jar selenium-server-standalone-3.3.1.jar -role webdriver -hub http://172.17.0.48:4444/grid/register -port 5556
+
+String url= System.getProperty("user.dir")+"\\src\\chromedriver.exe";	 
+System.setProperty("webdriver.chrome.driver",url); 
+DesiredCapabilities cap = DesiredCapabilities.chrome();
+cap.setBrowserName("chrome");
+cap.setPlatform(Platform.ANY);
+System.out.println("abc");
+WebDriver driver=new RemoteWebDriver(new URL("http:// localhost: 4444/wd/hub"), cap);
+driver.get("http://the-internet.herokuapp.com/key_presses");
+Here, 
+URL http://localhost:4444/wd/hub is IP address of Hub Machine + Hub Port +/wd/hub/
+In case of many nodes connected to HUB, the Hub see on which node statisfy the Desired Capabilities define by the user. 
