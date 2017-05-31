@@ -1,0 +1,115 @@
+Day1 
+1. Why Java is called platform independent? 
+2. What is the output of 5&7?
+3. What is value a and b for  (b= a++ + a++) if a=5?
+4. Is statement    char r=100; correct?
+5. What are datatypes? 
+6. WAP to print    
+a. 1
+b. 12
+c. 123
+d. 1234
+e. 12345
+7. Difference between QA and QC.
+8. What is SQA? 
+9. What is testing?
+10. What are good qualities of tester?
+11. What is cost of quality? 
+12. Why according to you testing is important? 
+13. 
+
+
+14. 
+
+Day 2
+1. How many bytes are consumed by datatype char?
+2. What type of Data type is String?
+3. WAP to print “Hello Java” as “Avaj Olleh”?
+4. Why string is immutable?
+5. What is difference between String, String builder and String buffer? 
+6. Where difference between is equals and == in case of String?
+7. What are different meeting in Scrum Process? 
+8. What are advantages and disadvantages of Agile? 
+9. What do you understand by Test driven framework?
+10. What is burn up and burn down chart?
+11. Who is Product Owner?
+12. What is Sprint backlog?
+13. A man has two ropes of varying thickness (Those two ropes are not identical, they aren’t the same density nor the same length nor the same width). Each rope burns in 60 minutes. He actually wants to measure 45 mins. How can he measure 45 mins using only these two ropes.
+He can’t cut the one rope in half because the ropes are non-homogeneous and he can’t be sure how long it will burn.
+Ans: He will burn one of the rope at both the ends and the second rope at one end. After half an hour, the first one burns completely and at this point of time, he will burn the other end of the second rope so now it will take 15 mins more to completely burn. so total time is 30+15 i.e. 45mins.
+14.  (Ages) A is two years older than B who is twice as old as C. If the total of the ages of A, B and C be 27, the how old is B? 10
+15. (Averages) The captain of a cricket team of 11 members is 26 years old and the wicket keeper is 3 years older. If the ages of these two are excluded, the average age of the remaining players is one year less than the average age of the whole team. What is the average age of the team? 23
+Day 3
+1. Define array?
+2. How do you find the size of array in Java?
+3. Write a program to transpose an array?
+4. What is the difference between for, while and do while loop?
+5. What is the purpose of break in switch statement?
+6. What are instance of and ternary operator?
+7. Explain V Model?
+8. Difference between STLC and Agile?
+9. What is RAD Model?
+10. What are Boundary Value analysis and Decision Making table technique?
+11. What is difference between White and Black box testing? 
+12. What is difference between Smoke and Sanity testing? 
+13. Trains
+Day 4 
+1. WAP to find frequency of each letter in a string? 
+2. What is class and object. Give example
+3. What is difference between structure and OO approach? 
+4. What is constructor? 
+5. What is static keyword? Where you use this keyword?
+6. Can class be static? Give reason
+7. Why main method is static? 
+8. What is the difference between Regression and Retesting? 
+9. What is performance testing, load and stress testing? 
+10. What is function and non-functional testing? 
+11. What is difference between Manual and Automation testing?
+12. What is Adhoc testing ?
+13. Mixture
+Day 5 
+1. WAP to find if the word exists in the string without using contains method in java? 
+2. What is final keyword in java? Can a class be final in java?
+3. What is abstract keyword in Java? 
+4. Can main method be final in Java? Give reason
+5. Do Constructors inherit? 
+6. How can you initialize object of Interfaces? 
+7.  What is test case? 
+8. What is STLC?
+9. What is test planning? Who prepare test plan? 
+10. Write 10 test cases of a banking transaction 
+11. Write 10 test cases of the Keyboard? 
+12. What is test case priority? 
+13. Partnership
+Day 6 
+1. Prepare the chart for Access Specifier? 
+2. What are throw and throws? 
+3. What is try, catch and finally? 
+4. WAP to find frequency of each digit in a number? 
+5. Can you inherit abstract class? Give reason
+6. What is overriding and overloading? 
+7. What is TCMS? 
+8. Draw Bug Life Cycle? 
+9. Define severity and priority of bug spelling mistake on the Home page?
+10. What are tools available for bug reporting? 
+11. What tools are there for performance testing? 
+12. What is bug scrubbing? 
+13. 
+Day 6 
+1. Can you override a final method? 
+2. How will you call the constructor of parent class from the child class?
+3. Can you access default method of parent class? Give reason
+4. What is IO package? 
+5. Name exceptions occur in your codes normally? 
+6. Write syntax to take input from keyboard?
+7. What do you understand by System.out.println()?
+8. What is bug Triaging? 
+9. Desktop vs Web application testing? 
+10. Write 10 unique test cases for Notepad? 
+11. Mobile testing vs Mobile app testing? 
+12. Write 10 unique test cases for Whts app? 
+Day 7 
+1. What are Simulators in Mobile Application? 
+2. Write 10 use cases of Chair? 
+3. What is exit criteria? 
+4. WAP to read and write a file using byte streaming? 
