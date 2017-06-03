@@ -43,24 +43,6 @@ public class MyCollections {
 		{
 			System.out.println(e.marks);
 		}
-	list.clear();
-		list.add(stu1);
-		list.add(stu2);
-		list.add(stu3);
-		java.util.Collections.sort(list,new marks());
-		for(student e: list)
-		{
-			System.out.println(e.marks);
-		}
-		list.clear();
-		list.add(stu1);
-		list.add(stu2);
-		list.add(stu3);
-		java.util.Collections.sort(list,new name());
-		for(student e: list)
-		{
-			System.out.println(e.name);
-		}
-	}
+	
 
 }
