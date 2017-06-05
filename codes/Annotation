@@ -1,0 +1,26 @@
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface MyAnnoation {
+
+	int mymethod() ;
+	String mymethod1() default "Name";
+}
+
+
+
+import java.lang.reflect.Method;
+
+public class MyClass {
+
+	public static void main(String[] args) {
+MyAnnoation[] a=MyAnnoation.class.getAnnotationsByType(MyAnnoation.class);
+
+for (MyAnnoation d:a){
+	System.out.println(d.mymethod());
+	System.out.println(d.mymethod1());
+}
