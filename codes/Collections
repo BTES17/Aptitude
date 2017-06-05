@@ -1,9 +1,36 @@
 
-class Student implements Comparable<student>{
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
+
+public class Collect1 {
+
+	public static void main(String[] args) {
+		student stu1= new student(2,50,"abc");
+		student stu2= new student(1,51,"abc1");
+		student stu3= new student(0,52,"abc2");
+		ArrayList<student>  list= new ArrayList<student>();
+	
+		list.add(stu1);
+		list.add(stu2);
+		list.add(stu3);
+		java.util.Collections.sort(list);
+		for(student e: list)
+		{
+			System.out.println(e.rollno);
+		}
+		
+	
+}
+}
+
+class student implements Comparable<student>{
 int marks;
 int rollno;
 String name;
-Student (int marks, int rollno, String name){
+student (int marks, int rollno, String name){
 	this.marks=marks;
 	this.rollno=rollno;
 	this.name= name;
@@ -21,28 +48,3 @@ Student (int marks, int rollno, String name){
 }
 
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Scanner;
-
-public class MyCollections {
-
-	public static void main(String[] args) {
-		student stu1= new student(2,5,"abc");
-		student stu2= new student(1,5,"abc1");
-		student stu3= new student(0,5,"abc2");
-		ArrayList<student>  list= new ArrayList<student>();
-	
-		list.add(stu1);
-		list.add(stu2);
-		list.add(stu3);
-		java.util.Collections.sort(list);
-		for(student e: list)
-		{
-			System.out.println(e.marks);
-		}
-	
-
-}
