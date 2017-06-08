@@ -5,7 +5,7 @@
 4) now next step to install node
 5) open another comand promp and run this so that your machine act as node 
 
-java -Dwebdriver.chrome.driver=C:\Chrome\chromedriver.exe -Dwebdriver.ie.driver=C:\Chrome\IEDriverServer.exe -jar selenium-server-standalone-3.0.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5557 -browser browserName=iexplore,maxInstances=1 -browser browserName=firefox,maxInstances=1 -browser browserName=chrome,maxInstances=1 -maxSession=1
+java -Dwebdriver.chrome.driver=C:\Chrome\chromedriver.exe  -jar selenium-server-standalone-3.0.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5557 
 
 java -Dwebdriver.chrome.driver=C:\Chrome\chromedriver.exe -jar selenium-server-standalone-3.0.1.jar -role webdriver -hub http://localhost:4444/grid/register -port 5557 -browser browserName=chrome,maxInstances=1 -maxSession=
 
