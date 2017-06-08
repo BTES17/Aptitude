@@ -1,4 +1,11 @@
-Links for practicse :
+Activity on the labels: 
+1. Store the labels into a string like string expectedlabel ="create,facebook,usrename,day"
+2. Get the string in array of string.
+3. Get all the lables from the page in List<Webelemnt> actuallist
+4. Print pass if the expectedlabel is found in the actuallist
+
+
+Links for practicse drop down  :
 https://fullcalendar.io/
 http://jqueryui.com/droppable/
 https://bugs.chromium.org/p/chromedriver/issues/detail?id=841&q=&colspec=ID%20Status%20Pri%20Owner%20Summary
