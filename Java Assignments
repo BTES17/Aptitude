@@ -24,6 +24,7 @@ WAP to find greatest among three numbers using
 1. WAP to find greatest among three numbers using if and esle if statement. 
 2. Write a program to create Simple Calculator using switch case.
 3. WAP to immplement swtich statement on days of week.
+3. WAP to find that if the given value is a consonant or a vowel. 
 4. Write a program to input electricity unit charges and calculate total electricity bill according to the given condition:
                     For first 50 units Rs. 0.50/unit
                     For next 100 units Rs. 0.75/unit
