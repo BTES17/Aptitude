@@ -1,0 +1,9 @@
+Map<String, Object> pr= new HashMap<String, Object>();
+	pr.put("profile.default_content_setting_values.notifications", 2);
+	
+		
+		ChromeOptions op= new ChromeOptions();
+		op.setExperimentalOption("prefs", pr);
+		
+		
+		WebDriver driver=new ChromeDriver(op);
