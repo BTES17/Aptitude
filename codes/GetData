@@ -3,6 +3,10 @@ package POI;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -12,6 +16,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 public class SalExcel extends Hls_Reader{
 	//SalExcel(){}
 	int i=0;
@@ -23,19 +28,8 @@ public class SalExcel extends Hls_Reader{
 	 SalExcel(String path){
 		 super(path);
     	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ankit\\Downloads\\selenium-java-3.4.0\\chromedriver.exe");
-			// new ChromeDriver is opening browser. ChromeDriver() is constructor
-//		driver.get("http://thewildttrack-001-site1.gtempurl.com/app/sign_in.html");
-		
-//		Thread.sleep(10000);
-//		driver.navigate().back();
-//		Thread.sleep(10000);
-//		driver.navigate().forward();
-//		Thread.sleep(10000);
-//		By.linkText("Lost Password?");
-		
-//		WebElement lost=driver.findElement(By.a
-//		lost.click();
-	}
+
+    }
 	public static void main (String args[]) throws IOException
 	{		
 		
@@ -47,8 +41,17 @@ public class SalExcel extends Hls_Reader{
 				 catch (Exception e) {
 					e.printStackTrace();
 				}
-		WebDriver driver=new ChromeDriver();
-		driver.get("http://www.facebook.com");
+		Map<String, Object> pr= new HashMap<String, Object>();
+    	pr.put("profile.default_content_setting_values.notifications", 2);
+    	
+    		
+    		ChromeOptions op= new ChromeOptions();
+    		op.setExperimentalOption("prefs", pr);
+    		
+    		
+    		WebDriver driver=new ChromeDriver(op);
+    		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    		driver.get("https://www.facebook.com");
 		String Link=driver.getCurrentUrl();
 		System.out.println(Link);
 		String Title=driver.getTitle();
@@ -65,7 +68,17 @@ public class SalExcel extends Hls_Reader{
 		l.sendKeys(pass);
 		WebElement enter=driver.findElement(By.id("u_0_r"));
 		enter.click();
-		}	//This method is to write in the Excel cell, Row num and Col num are the parameters
+		WebElement Home=driver.findElement(By.xpath("//*[@id=\"u_0_b\"]/text()"));
+		String Result;
+		String Hom=mf.getCellData("Sheet1", "Expected",2);
+		if(Hom.equals(Home.getText()))
+		{
+			Result="PASS";
+		}
+		else
+			Result="FAIL";
+		mf.setCellData("Sheet1", "Result", 2 , Result);
+	}	//This method is to write in the Excel cell, Row num and Col num are the parameters
 	 
 	public void setCellData(String Result,  int RowNum, int ColNum) throws Exception	{
 
