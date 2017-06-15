@@ -1,0 +1,143 @@
+package POI;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class SalExcel extends Hls_Reader{
+	//SalExcel(){}
+	int i=0;
+	Sheet sheet;
+	 Workbook sample;
+	 FileOutputStream fileOut;
+	 FileInputStream myfile;
+	 
+	 SalExcel(String path){
+		 super(path);
+    	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ankit\\Downloads\\selenium-java-3.4.0\\chromedriver.exe");
+			// new ChromeDriver is opening browser. ChromeDriver() is constructor
+//		driver.get("http://thewildttrack-001-site1.gtempurl.com/app/sign_in.html");
+		
+//		Thread.sleep(10000);
+//		driver.navigate().back();
+//		Thread.sleep(10000);
+//		driver.navigate().forward();
+//		Thread.sleep(10000);
+//		By.linkText("Lost Password?");
+		
+//		WebElement lost=driver.findElement(By.a
+//		lost.click();
+	}
+	public static void main (String args[]) throws IOException
+	{		
+		
+		String path = "F:\\SaleniumProject\\Test1.xls";
+		SalExcel mf= new SalExcel(path);
+		try{
+		mf.setCellData("Row", 0, 0);
+		mf.getCellData(1, 1);}
+				 catch (Exception e) {
+					e.printStackTrace();
+				}
+		WebDriver driver=new ChromeDriver();
+		driver.get("http://www.facebook.com");
+		String Link=driver.getCurrentUrl();
+		System.out.println(Link);
+		String Title=driver.getTitle();
+//		driver.quit();
+		System.out.println("Title: "+Title);
+		Link=driver.getCurrentUrl();
+		System.out.println(Link);
+		Title=driver.getTitle();
+		WebElement p=(driver.findElement(By.id("email")));
+		String ID=mf.getCellData("Sheet1","UserName",2);
+		p.sendKeys(ID);
+		WebElement l=(driver.findElement(By.id("pass")));
+		String pass=mf.getCellData("Sheet1","Password",2);
+		l.sendKeys(pass);
+		WebElement enter=driver.findElement(By.id("u_0_r"));
+		enter.click();
+		}	//This method is to write in the Excel cell, Row num and Col num are the parameters
+	 
+	public void setCellData(String Result,  int RowNum, int ColNum) throws Exception	{
+
+			try{
+  			Row row = sheet.getRow(RowNum);
+
+			Cell cell= row.getCell(ColNum, Row.RETURN_BLANK_AS_NULL);
+
+			if (cell == null) {
+
+				cell = row.createCell(ColNum);
+
+				cell.setCellValue(Result);
+				
+
+				} else {
+
+					cell.setCellValue(Result);
+				
+					System.out.println("Test");
+					System.out.println(cell.getStringCellValue());
+
+				}
+
+		fileOut = new FileOutputStream(path);
+ sample.write(fileOut);
+
+			    fileOut.close();
+			
+			}
+	       catch(Exception e){
+
+				throw (e);
+
+		}
+	}	
+	
+	public String getCellData( int RowNum, int ColNum) throws Exception	{
+
+		try{
+
+			Row row = sheet.getRow(RowNum);
+
+		Cell cell= row.getCell(ColNum, Row.RETURN_BLANK_AS_NULL);
+
+		if (cell == null) {
+			System.out.println("No such cell exist");
+
+			return null;
+
+			} else {
+				System.out.println(cell.getStringCellValue().trim());
+
+				return cell.getStringCellValue().trim();
+
+			}
+		// Constant variables Test Data path and Test Data file name
+		}
+       catch(Exception e){
+
+			throw (e);
+
+	}
+}
+}
+
+
+
+/*
+POM- Page Object Model, Object repository
+QTP= Enable creation of object repository automation
+
+
+
+*/
