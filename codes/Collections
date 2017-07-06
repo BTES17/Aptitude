@@ -19,6 +19,7 @@ public class Collect {
 	    l.add(3);
 	    l.add(7);
 	    l.add(1);
+	  
 	    for(int a:l){
 	    	System.out.println(a);
 	    }
@@ -38,6 +39,7 @@ public class Collect {
 		{
 			System.out.println(e.marks);
 		}
+		  java.util.Collections.sort(list,new name());
 	
 
 }}
