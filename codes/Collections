@@ -61,3 +61,25 @@ public class Collect {
 			}
 			
 		}
+		
+		
+class marks implements Comparator<student>{
+
+	@Override
+	public int compare(student o,student o1) {
+		if (o.marks>o1.marks)
+			return 1;
+			else if (o.marks==o1.marks)
+				return 0;
+			else 
+				return -1;
+	}
+	
+}
+
+class name implements Comparator<student>{
+
+	@Override
+	public int compare(student o,student o1) {
+		return o.name.compareTo(o1.name);
+	}
