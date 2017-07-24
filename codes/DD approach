@@ -1,0 +1,60 @@
+package POI;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class sample {
+	static WebDriver d;
+	static Hls_Reader datatable = null;
+static void setup(int r)
+{
+	
+	d.get(datatable.getCellData("Sheet1", "URL", r));
+}
+static void testcase(int r)
+{
+	
+	d.findElement(By.id("email")).sendKeys(datatable.getCellData("Sheet1", "Username", r));
+	
+}
+static void result()
+{
+	
+}
+
+static void ExceuteLoginScenario()
+{
+
+	 datatable = new Hls_Reader("C:\\CM3.0\\app\\test\\Framework\\AutomationBvt\\src\\config\\xlfiles\\Controller.xlsx");
+		for(int r=2 ;r< datatable.getRowCount("Sheet1"); r++){
+			
+			if(datatable.getCellData("Sheet1", "Status", r).equals("ON"))
+			{
+				if(datatable.getCellData("Sheet1", "Browser", r).equals("Google"))
+				{
+					System.setProperty("webdriver.chrome.driver", "");
+					 d= new ChromeDriver();
+				}
+				else if(datatable.getCellData("Sheet1", "Browser", r).equals("Mozilla")){
+					System.setProperty("webdriver.gecko.driver", "");
+					 d= new FirefoxDriver();
+				}
+			}
+			setup(r);
+			testcase(r);
+			result();
+			
+		}
+}
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	
+		
+
+
+}
