@@ -1,0 +1,31 @@
+static void ExceuteLoginScenario_KDD(String testcase)
+{
+
+
+	int row=datatable.getCellRowNum("Sheet1", "TestCase_ID", testcase);
+    if(datatable.getCellData("Sheet1", "Browser", row).equals("Google"))
+				{
+					System.setProperty("webdriver.chrome.driver", "");
+					 d= new ChromeDriver();
+				}
+				else if(datatable.getCellData("Sheet1", "Browser", row).equals("Mozilla")){
+					System.setProperty("webdriver.gecko.driver", "");
+					 d= new FirefoxDriver();
+				}
+			
+			setup(row);
+			testcase(row);
+			result(row);
+			
+		
+}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		datatable = new Hls_Reader("C:\\CM3.0\\app\\test\\Framework\\AutomationBvt\\src\\config\\xlfiles\\Controller.xlsx");
+		ExceuteLoginScenario_KDD("TC_5");
+		ExceuteLoginScenario_KDD("TC_4");
+		
+
+
+}
