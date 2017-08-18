@@ -1,0 +1,46 @@
+public static void greater(int x,int y, int z){
+        System.out.println(x+ " "+ y+ " "+z);
+
+        if(x>y)
+        {
+            if (x>z)
+                System.out.println("X is greater st1");
+            else if (x==z)
+                 System.out.println("X,Z are equal st2")    ;
+            else
+                System.out.println("Z is greater st3");
+
+        }
+
+        else if(y>z)
+        {
+            if (x<z)
+                System.out.println("Y is greater st4");
+            else if (x==y)
+                System.out.println("X,Y  are equal st5");
+            else if (x==z)
+                System.out.println("X,Z  are equal st6");
+            else
+                 System.out.println("Y is greater st7")    ;
+        }
+      else{
+          if(x==y)
+                {
+                    if(y==z)
+                        System.out.println("X,Y,Z are equal st8");
+
+                    else
+                        System.out.println("X,Y are equal st9");
+
+
+                }
+                else if (y==z)
+                {
+                    System.out.println("Y,Z are equal st10");
+                }
+                else{
+                    System.out.println("Z is greatest st11");
+                }
+
+            }
+    } 
