@@ -1,0 +1,47 @@
+
+
+In a system designed to work out the tax to be paid:
+An employee has £4000 of salary tax free.
+The next £1500 is taxed at 10%.
+The next £28000 after that is taxed at 22%.
+Any further amount is taxed at 40%.
+
+To the nearest whole pound, which of these groups of numbers fall into three DIFFERENT equivalence classes?
+a) £4000; £5000; £5500
+b) £32001; £34000; £36500
+c) £28000; £28001; £32001
+d) £4000; £4200; £5600
+
+An input field takes the year of birth between 1900 and 2004.
+The boundary values for testing this field are:
+a. 0,1900,2004,2005
+b. 1900, 2004
+c. 1899,1900,2004,2005
+d. 1899, 1900, 1901,2003,2004,2005
+
+A program validates a numeric field as follows: values less than 10 are rejected, values between 10 and 21 are accepted, values greater than or equal to 22 are rejected. Which of the following covers the MOST boundary values?
+
+a. 9,10,11,22
+b. 9,10,21,22
+c. 10,11,21,22
+d. 10,11,20,21
+
+This pseudo code is given:
+
+Integer a;
+If (a > 1 AND a < 50)
+Then …
+End if
+
+Which of the following collections of test input values is the correct result of a boundary value analysis?
+a) 0, 1, 2, 50, 51
+b) 1, 2, 49, 50
+c) -1, 0, 1, 2, 49, 50, 51
+d) -32767, -1, 0, 1, 49, 50, 51, +32768
+
+In a flight reservation system, the number of available seats in each plane model is an input. A plane may have any positive number of available seats, up to the given capacity of the plane. Using Boundary Value analysis, a list of available – seat values were generated. Which of the following lists is correct?
+
+a. 1, 2, capacity -1, capacity, capacity plus 1
+b. 0, 1, capacity, capacity plus 1
+c. 0, 1, 2, capacity plus 1, a very large number
+d. 0, 1, 10, 100, capacity, capacity plus one 
