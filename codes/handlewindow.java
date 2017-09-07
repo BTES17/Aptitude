@@ -2,6 +2,7 @@ package Frames;
 
 
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -9,6 +10,10 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import cucumber.deps.com.thoughtworks.xstream.core.util.WeakCache;
 
 public class handlewindow
 {
@@ -40,34 +45,39 @@ public class handlewindow
 		
 		WebDriver driver1 = new ChromeDriver();
 		//WebDriver driver1 = new FirefoxDriver();
-		driver1.get("https://www.facebook.com");
-		String handle_fb =driver1.getWindowHandle();
-		//System.out.println(handle_fb);
+		driver1.get("https://www.infibeam.com/Login.action?redirectURL=https%3A%2F%2Fwww.infibeam.com%2F");
 		
-		Actions a= new Actions(driver1);
-		WebElement eb= driver1.findElement(By.id("u_0_q"));
-		//eb.click();
-		 System.out.println(handle_fb);
-		WebElement e= driver1.findElement(By.linkText("Forgotten account?"));
-         a.sendKeys(Keys.SHIFT).click(e).build().perform();
-        
-        Set<String> handles =driver1.getWindowHandles();
+		driver1.findElement(By.id("google")).click();
+		String old= driver1.getWindowHandle();
+		
+		System.out.println(old);
+		try{new WebDriverWait(driver1, 30).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.id("identifierId")));}
+		catch(Exception e){
+			System.out.println("Execxption found");
+		}
+		driver1.findElement(By.id("userHandle")).sendKeys("ghdfgD");;
+		//driver1.findElement(By.id("identifierId")).sendKeys("ghdfgD");;
+		
+		
+       Set<String> handles =driver1.getWindowHandles();
+     
+       System.out.println(handles.size());
+      Iterator i= handles.iterator();
+      
+      String new1=null;
+      old=i.next().toString();
+      new1=i.next().toString();
+      while (i.hasNext())
+      {
+    	  new1=i.next().toString();
+      }
        
+System.out.println(new1);
 
-for(String ab:handles)
-{
-	 System.out.println(handles.size());
-	handle_fb=ab;
-	
-}
+	driver1.switchTo().window(new1);	
 		
+	driver1.findElement(By.id("identifierId")).sendKeys("ghdfgD");;
 		
-		
-		 driver1.switchTo().window(handle_fb);
-		 System.out.println(handle_fb);
-		 Thread.sleep(100);
-		 WebElement em= driver1.findElement(By.id("email"));
-		em.sendKeys("ramanrty@gmail.com");
 		
 		
 
