@@ -17,8 +17,8 @@ public class Frames {
 		    System.setProperty("webdriver.chrome.driver",url); 
 		   
 		    driver=new ChromeDriver(); 
-		IFrames();
-		 // IFrame_simple();
+		//IFrames();
+		  IFrame_simple();
 		  }
     public static void IFrame_simple()
     {
@@ -26,8 +26,9 @@ public class Frames {
     	driver.manage().window().maximize();
     	if (driver.getPageSource().contains("Your content goes here."))
     	{
-    		System.out.println("Element found");
-    
+    		
+              // driver.findElement(By.id("tinymce")).sendKeys("gvhj");
+               System.out.println("Element found1");
     	}
     	else 
     	{
@@ -38,7 +39,7 @@ public class Frames {
     	if (driver.getPageSource().contains("Your content goes here."))
     	{
     		System.out.println("Element found");
-    
+    		driver.findElement(By.id("tinymce")).sendKeys("gvhj");
     	}
     	else 
     	{
